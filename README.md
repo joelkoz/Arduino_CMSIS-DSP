@@ -5,6 +5,15 @@ Code here is as of CMSIS-DSP version 1.10.0
 
 The original code can be found [here](https://github.com/ARM-software/CMSIS-DSP).
 
+# Building in PlatformIO
+
+If using this, you will most likely want to add the ARM flag to bulid this source in hardware assisted "fast" mode by adding
+the following to your platformio.ini project file:
+```
+build_flags =
+    -Ofast
+```
+
 # Re-creating from scratch
 This library was built using the following steps:
 
